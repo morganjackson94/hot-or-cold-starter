@@ -12,6 +12,11 @@ $(document).ready(function(){
   		$(".overlay").fadeOut(1000);
   	});
 
+  	/*--- Generate Random Number ---*/
+  	function genNum() {
+  		
+  	}
+
 });
 
 
