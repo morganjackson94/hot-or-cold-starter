@@ -9,11 +9,12 @@ $(document).ready(function(){
   var guessList = $("#guessList");
   var guessCounter = 0;
   var userGuess = $("#userGuess").val();
+
   
   /*--- User Creates New Game ---*/
   var newGame = function() {
-      genNum;
-      clearGuesses;
+      genNum();
+      clearGuesses();
       console.log("you have started a new game");
     };
 
@@ -21,7 +22,7 @@ $(document).ready(function(){
   var genNum = function() {
     var randomNumber = Math.floor(Math.random() * 100) +1;
     globalNum = randomNumber;
-    console.log("Your Number is" + randomNumber);
+    console.log("Mystery Number is " + randomNumber);
     return randomNumber;   
   };
 	
@@ -37,17 +38,12 @@ $(document).ready(function(){
 
   	
 
-    
-    
-
-    
-
-    /*--- Clear Guesses ---*/
-    var clearGuesses = function() {
-      guessCounter = 0;
-      $("#guessList").empty();
-      $("#userGuess").empty();
-    };
+  /*--- Clear Guesses ---*/
+  var clearGuesses = function() {
+    guessCounter = 0;
+    $("#guessList").empty();
+    $("#userGuess").empty();
+  };
 
 
 
